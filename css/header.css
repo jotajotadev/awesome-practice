@@ -1,0 +1,8 @@
+.header {
+    background: var(--background-header);
+}
+.header > .wrap {
+    max-width: 1366px;
+    margin-right: auto;
+    margin-left: auto;
+}
