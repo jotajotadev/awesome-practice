@@ -1,8 +1,40 @@
 .header {
     background: var(--background-header);
+    box-shadow: 0 5px 10px -8px var(--shadow-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .header > .wrap {
     max-width: 1366px;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.image-logo {
+    width: 70px;
+    display: block;
+}
+.list-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+.item-nav {
+    padding: 0.5em 1em;
+}
+.link-nav {
+    text-decoration: none;
+    color: var(--link-color-header);
+    font-weight: 700;
+}
+.link-nav:hover {
+    color: var(--link-color-header-hover);
 }

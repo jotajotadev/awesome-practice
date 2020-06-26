@@ -22,6 +22,12 @@ html {
 
 body {
   margin: 0;
+  font-family: sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /**

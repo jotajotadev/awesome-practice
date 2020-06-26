@@ -1,7 +1,13 @@
-.header {
+.footer {
     background: var(--background-footer);
+    color: var(--color-text-footer);
+    /*temporaly code below*/
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
 }
-.header > .wrap {
+.footer > .wrap {
     max-width: 1366px;
     margin-right: auto;
     margin-left: auto;
