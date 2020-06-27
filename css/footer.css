@@ -97,7 +97,7 @@
 }
 /* .wrap > * {
     border: 2px solid white;
-    this line is for view the grid
+
 } */
 @media (min-width: 800px) {
     .careers-footer,
@@ -113,6 +113,7 @@
             "careers about-1 about-2 map"
             "small small small map"
         ;
+        column-gap: 2rem;
     }
     .button-footer{
         grid-area: button;
