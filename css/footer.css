@@ -1,7 +1,6 @@
 .footer {
     background: var(--background-footer);
     color: var(--color-text-footer);
-    padding-top: 10em;
 }
 .footer > .wrap {
     max-width: 1366px;
@@ -9,5 +8,141 @@
     margin-left: auto;
     padding-left: 2em;
     padding-right: 2em;
+    padding-bottom: 2.5em;
+    padding-top: 2.5em;
 }
-    
+.button-footer {
+    display: flex;
+    justify-content: center;
+}
+.link-button-footer {
+    padding: 0.9em 3em;
+    border: 2px solid #fff;
+    text-decoration: none;
+}
+.link-button-footer:nth-child(1) {
+    background: #fff;
+    color: rgb(226, 75, 48);
+}
+.link-button-footer:nth-child(2) {
+    color: #fff;
+    padding: 0.9em 3.4em;
+}
+.numbers-contact-footer {
+    text-align: center;
+}
+.map-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.image-logo-footer {
+    width: 100px;
+    color: #fff;
+}
+.direction-footer {
+    font-size: 0.9em;
+    font-style: normal;
+}
+.maps-button-footer {
+    padding: 0.5em 1em;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 0.8em;
+    margin-bottom: 0.3em;
+    border-left: 2px solid #fff;
+    text-transform: uppercase;
+}
+.information-maps-footer {
+    font-size: 0.7em;
+}
+.title-footer-careers {
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+.list-careers-footer,
+.list-about-1,
+.list-about-2 {
+    padding-left: 0;
+    list-style: none;
+
+}
+.item-list-careers-footer,
+.item-list-about-1,
+.item-list-about-2 {
+    margin-bottom: 0.5em;
+}
+.link-list-careers-footer,
+.link-list-about-1,
+.link-list-about-2 {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #fff;
+}
+.link-list-careers-footer::before,
+.link-list-about-1::before,
+.link-list-about-2::before {
+    content: "- ";
+}
+.careers-footer,
+.about-1-footer,
+.about-2-footer {
+    text-align: center;
+}
+.small-footer {
+    text-align: center;
+}
+/* .wrap > * {
+    border: 2px solid white;
+    this line is for view the grid
+} */
+@media (min-width: 800px) {
+    .careers-footer,
+    .about-1-footer,
+    .about-2-footer {
+        text-align: left;
+    }
+    .footer > .wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "button numbers numbers map"
+            "careers about-1 about-2 map"
+            "small small small map"
+        ;
+    }
+    .button-footer{
+        grid-area: button;
+        align-self: start;
+    }
+    .numbers-contact-footer{
+        grid-area: numbers;
+    }
+    .map-footer{
+        grid-area: map;
+    }
+    .careers-footer{
+        grid-area: careers;
+        align-self: center;
+        justify-self: start;
+    }
+    .about-1-footer{
+        grid-area: about-1;
+        justify-self: start;
+    }
+    .about-2-footer{
+        grid-area: about-2;
+        justify-self: start;
+    }
+    .small-footer{
+        grid-area: small;
+        justify-self: start;
+    }
+    .numbers-contact-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}
