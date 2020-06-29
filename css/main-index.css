@@ -1,0 +1,252 @@
+.container-main {
+    max-width: 1366px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+}
+.image-banner {
+    display: block;
+    width: 100%;
+}
+.section-primary {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item-primary {
+    margin-left: 1rem;
+    max-width: 300px;    
+}
+.item-primary:nth-child(1) {
+    margin-left: 0;
+}
+.item-primary > img{
+    display: block;
+    width: 100%;
+}
+.link-item-primary {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: orangered;
+    font-weight: 700;
+}
+/* code below is for couse item  */
+.course-information {
+    background-color: rgb(226, 75, 48);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    grid-area: courses;
+}
+.item-grid-image-1,
+.item-grid-image-2,
+.item-grid-image-3,
+.item-grid-image-4{
+    background-image: linear-gradient(to top,rgba(0,0,0,0.5),rgba(255,255,255,0)),
+    url("https://img.huffingtonpost.com/asset/5c8a855e230000040123335a.jpeg?ops=scalefit_630_noupscale");
+    background-size: cover;
+    background-position: center start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+
+}
+.title-course {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.description-course {
+    color: #fff;
+    margin-bottom: 3rem;
+}
+.button-course {
+    font-size: 0.7rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    border: 2px solid #000;
+    border-radius: 1.5rem;
+    text-decoration: none;
+}
+.courses {
+    display: grid;
+    grid-template-columns: 25% 25% 1fr;
+    grid-template-rows:auto repeat(2, 250px);
+    grid-template-areas: 
+        "courses courses courses"
+        "image-1 image-2 image-3"
+        "image-4 image-4 image-3"
+    ;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.item-grid-image-1 {
+    grid-area: image-1;
+    background-color: red;
+}
+.item-grid-image-2 {
+    grid-area: image-2;
+}
+.item-grid-image-3 {
+    grid-area: image-3;
+}
+.item-grid-image-4 {
+    grid-area: image-4;
+}
+/* above code is for couses item */
+
+.divider {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://i.ytimg.com/vi/HkYqofJii_E/maxresdefault.jpg");
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    background-position: center;
+    background-size: cover;
+}
+.title-divider {
+    text-align: center;
+    font-size: 1.6rem;
+}
+.description-divider {
+    text-align: center;
+}
+.container-divider {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.title-blog-a {
+    font-size: 1.6rem;
+}
+.container-blog-a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+}
+.description-item-blog-a {
+    background-color: teal;
+    padding: 1.3rem 2rem;
+}
+.title-item-blog-a {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+.text-item-blog-a {
+    font-size: 0.9rem;
+    color: white;
+}
+.date-item-blog-a {
+    display: flex;
+    align-items: baseline;
+    order: -1;
+}
+.sub-date-item-blog-a:nth-child(1) {
+    color: teal;
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+.sub-date-item-blog-a:nth-child(2) {
+    color: teal;
+}
+.item-blog-a {
+    display: flex;
+    flex-direction: column;
+}
+.container-blog-b {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.about-client {
+    min-height: 500px;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://i2.wp.com/hotbook.com.mx/wp-content/uploads/2014/10/hotbook-94.jpg?fit=1024%2C768&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 2rem;
+}
+.box-client {
+    background-color: rgba(255,0,0,0.5);
+    padding: 2rem;
+    color: #fff;
+    font-size: 0.9rem;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+}
+.title-about-client {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+.second-text-box-client {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+.footer-about-client {
+    background-color: tomato;
+    padding: 2rem;
+}
+.title-footer-about-client {
+    font-size: 1.8rem;
+    color: #fff;
+}
+.description-footer-about-client {
+    color: #fff;
+}
+.button-footer-about-client {
+    display: inline-block;
+    margin-top: 1rem;
+    border: 2px solid #000;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 1.5rem;
+}
+.fan-page {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+.fan-page > * {
+    margin: 0 1rem;
+    margin-top: 2rem;
+}
+.wrap-image-works {
+    display: flex;
+    justify-content: center;
+}
+.title-some-works {
+    text-align: center;
+}
+.wrap-image-works > * {
+    margin: 0 1rem;
+    margin-bottom: 3rem;
+}
